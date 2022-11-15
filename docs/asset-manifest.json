@@ -1,28 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.0d2da445.css",
-    "main.js": "/static/js/main.3cc43ef4.js",
+    "main.css": "/static/css/main.073c9b0a.css",
+    "main.js": "/static/js/main.f0228c84.js",
     "static/js/787.e3687fc5.chunk.js": "/static/js/787.e3687fc5.chunk.js",
-    "static/media/montserrat-all-700-normal.woff": "/static/media/montserrat-all-700-normal.168d5b114e5a6d216802.woff",
-    "static/media/montserrat-all-400-normal.woff": "/static/media/montserrat-all-400-normal.327fab0afc997a2d9b16.woff",
-    "static/media/fermacu.png": "/static/media/fermacu.0309622ce725121da1ed.png",
-    "static/media/montserrat-latin-700-normal.woff2": "/static/media/montserrat-latin-700-normal.56c09b9a46af6a54eeb3.woff2",
-    "static/media/montserrat-latin-400-normal.woff2": "/static/media/montserrat-latin-400-normal.acb6629fe45c43ad5d8b.woff2",
-    "static/media/montserrat-latin-ext-700-normal.woff2": "/static/media/montserrat-latin-ext-700-normal.ed2b8a3421aea40bea12.woff2",
-    "static/media/montserrat-latin-ext-400-normal.woff2": "/static/media/montserrat-latin-ext-400-normal.0204ec08a4b574088f02.woff2",
-    "static/media/montserrat-cyrillic-ext-700-normal.woff2": "/static/media/montserrat-cyrillic-ext-700-normal.a113ef18975312602ee1.woff2",
-    "static/media/montserrat-cyrillic-ext-400-normal.woff2": "/static/media/montserrat-cyrillic-ext-400-normal.bbf9e820a2563aac0d8b.woff2",
-    "static/media/montserrat-cyrillic-700-normal.woff2": "/static/media/montserrat-cyrillic-700-normal.2a599b68747a45fad239.woff2",
-    "static/media/montserrat-cyrillic-400-normal.woff2": "/static/media/montserrat-cyrillic-400-normal.e5c5c19c23e370a342c8.woff2",
-    "static/media/montserrat-vietnamese-700-normal.woff2": "/static/media/montserrat-vietnamese-700-normal.810d24ff481f2abee5c1.woff2",
-    "static/media/montserrat-vietnamese-400-normal.woff2": "/static/media/montserrat-vietnamese-400-normal.8f3f4c99eb0eeb5990f1.woff2",
+    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/index.html",
-    "main.0d2da445.css.map": "/static/css/main.0d2da445.css.map",
-    "main.3cc43ef4.js.map": "/static/js/main.3cc43ef4.js.map",
+    "main.073c9b0a.css.map": "/static/css/main.073c9b0a.css.map",
+    "main.f0228c84.js.map": "/static/js/main.f0228c84.js.map",
     "787.e3687fc5.chunk.js.map": "/static/js/787.e3687fc5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0d2da445.css",
-    "static/js/main.3cc43ef4.js"
+    "static/css/main.073c9b0a.css",
+    "static/js/main.f0228c84.js"
   ]
 }
