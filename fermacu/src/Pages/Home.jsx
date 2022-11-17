@@ -1,7 +1,7 @@
 import React from "react";
 
 //UI Material
-import { Grid, Stack } from "@mui/material";
+import { Grid } from "@mui/material";
 
 //Components
 import ActionsCard from "../Components/ActionsCard";
@@ -11,8 +11,8 @@ import AboutMeCard from "../Components/AboutMeCard";
 import {
   typographyForMainTitles,
   typographyForSubtitles,
-  typographyForText,
 } from "../Helpers/typography";
+import WorkWithMeCard from "../Components/WorkWithMeCard";
 
 export default function Home() {
   // ==========> Component <==========
@@ -41,6 +41,9 @@ export default function Home() {
       {/**SECTION 3 - HIRE ME*/}
       <Grid item xs={12} md={10} sx={{marginTop:"20px"}}>
         {typographyForSubtitles("> Have An Idea? Let's Build It.", "secondary")}
+      </Grid>
+      <Grid item xs={12} md={10}>
+        <WorkWithMeCard/>
       </Grid>
       {/**SECTION 4 - CONTACT ME*/}
       <Grid item xs={12} md={10} sx={{marginTop:"20px"}}>
