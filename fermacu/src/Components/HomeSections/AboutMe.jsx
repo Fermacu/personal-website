@@ -7,9 +7,11 @@ import { Box, Grid, Stack, Tab, Tabs } from "@mui/material";
 import {
   typographyForMainTitles,
   typographyForText,
-} from "../Helpers/typography";
-import EducationSection from "./EducationSection";
-import ExperienceSection from "./ExperienceSection";
+} from "../../Helpers/typography";
+
+//Components
+import EducationSection from "../HomeSections/EducationSection";
+import ExperienceSection from "../HomeSections/ExperienceSection";
 
 export default function AboutMeCard() {
   // ==========> Component States <==========
