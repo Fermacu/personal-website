@@ -8,7 +8,7 @@ import { Button, Grid, Stack } from "@mui/material";
 import GitHubCalendar from "react-github-calendar";
 
 //Helpers
-import { typographyForText } from "../Helpers/typography";
+import { typographyForText } from "../../Helpers/typography";
 
 export default function GithubSection() {
   return (
