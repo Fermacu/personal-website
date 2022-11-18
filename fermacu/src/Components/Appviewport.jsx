@@ -5,7 +5,7 @@ import { Grid } from "@mui/material";
 
 //Helpers
 import LogoWhite from "./Logos/LogoWhite";
-import Home from "./Home";
+import Home from "../Pages/Home";
 
 export default function Appviewport() {
   return (
