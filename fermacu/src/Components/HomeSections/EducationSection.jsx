@@ -27,7 +27,7 @@ export default function EducationSection() {
         <StackWithIcon
           icon={<Business color="secondary" />}
           title="Superior Technician in Business Administration"
-          text="Universidad de Costa Rica"
+          text="University of Costa Rica"
           text2="2021 - 2022"
         />
       </Grid>
@@ -35,7 +35,7 @@ export default function EducationSection() {
         <StackWithIcon
           icon={<Phonelink color="secondary" />}
           title="Technician in Software Development"
-          text="Universidad Cenfotec"
+          text="Cenfotec University"
           text2="2022 - 2023"
         />
       </Grid>
