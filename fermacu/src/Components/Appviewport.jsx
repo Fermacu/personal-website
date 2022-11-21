@@ -5,9 +5,8 @@ import { Grid } from "@mui/material";
 
 //Helpers
 import LogoWhite from "./Logos/LogoWhite";
-import Home from "../Pages/Home";
 
-export default function Appviewport() {
+export default function Appviewport({page}) {
   return (
     <Grid container sx={{ padding: "15px", backgroundColor: "#13233A" }}>
       <Grid item xs={12} align="center">
@@ -17,7 +16,7 @@ export default function Appviewport() {
         item
         xs={12}
       >
-        <Home />
+        {page}
       </Grid>
     </Grid>
   );
