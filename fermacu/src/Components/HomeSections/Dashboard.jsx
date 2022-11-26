@@ -1,14 +1,15 @@
 import React, { useState } from "react";
 
 //UI Material
-import { Box, Grid, Tab, Tabs } from "@mui/material";
+import { Box, Card, Grid, Tab, Tabs } from "@mui/material";
 
 //Helpers
 import { typographyForMainTitles, typographyForText } from "../../Helpers/typography";
 
 //Components
 import GithubSection from "./GithubSection";
-import ProjectsSection from "./ProjectsSection";
+import StackWithIcon from "../Basics/StackWithIcon";
+import { Phonelink, Web } from "@mui/icons-material";
 
 export default function Dashboard() {
   // ==========> Component States <==========
@@ -43,12 +44,6 @@ export default function Dashboard() {
   return (
     <Grid container spacing={2} justifyContent="flex-start">
       <Grid item xs={12}>
-        {typographyForMainTitles(
-          "The place where coffee becomes code.",
-          "white"
-        )}
-      </Grid>
-      <Grid item xs={12}>
         <Grid
           container
           sx={{
@@ -67,20 +62,77 @@ export default function Dashboard() {
                 aria-label="actions"
                 textColor="secondary"
               >
-                <Tab sx={{ color: "white" }} label="Github" {...a11yProps(0)} />
                 <Tab
                   sx={{ color: "white" }}
-                  label="Projects"
-                  {...a11yProps(1)}
+                  label="Experience"
+                  {...a11yProps(0)}
                 />
+                <Tab sx={{ color: "white" }} label="Github" {...a11yProps(1)} />
               </Tabs>
             </Box>
           </Grid>
           <Grid item xs={12}>
             <TabPanel value={tabValue} index={0}>
+              <Grid
+                container
+                spacing={2}
+                sx={{ color: "white", marginTop: "10px" }}
+                justifyContent="center"
+                alignItems="stretch"
+              >
+                <Grid item xs={12} md={2}>
+                  <Card
+                    raised
+                    sx={{
+                      padding: "20px",
+                      backgroundColor: "#161B22",
+                      color: "white",
+                    }}
+                  >
+                    <StackWithIcon
+                      icon={typographyForMainTitles("2+", "secondary")}
+                      title="Years"
+                      text="Experience"
+                    />
+                  </Card>
+                </Grid>
+                <Grid item xs={12} md={5}>
+                  <Card
+                    raised
+                    sx={{
+                      padding: "20px",
+                      backgroundColor: "#161B22",
+                      color: "white",
+                    }}
+                  >
+                    <StackWithIcon
+                      icon={<Phonelink color="secondary" />}
+                      title="Front End Developer"
+                      text="I design & build user interfaces"
+                    />
+                  </Card>
+                </Grid>
+                <Grid item xs={12} md={5}>
+                  <Card
+                    raised
+                    sx={{
+                      padding: "20px",
+                      backgroundColor: "#161B22",
+                      color: "white",
+                    }}
+                  >
+                    <StackWithIcon
+                      icon={<Web color="secondary" />}
+                      title="Web Development"
+                      text="I've been developing websites since 2020"
+                    />
+                  </Card>
+                </Grid>
+              </Grid>
+            </TabPanel>
+            <TabPanel value={tabValue} index={1}>
               <GithubSection />
             </TabPanel>
-            <TabPanel value={tabValue} index={1}><ProjectsSection/></TabPanel>
           </Grid>
         </Grid>
       </Grid>
