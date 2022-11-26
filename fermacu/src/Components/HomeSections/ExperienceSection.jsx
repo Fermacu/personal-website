@@ -61,6 +61,7 @@ export default function ExperienceSection() {
           variant="outlined"
           startIcon={<Person />}
           endIcon={<ArrowForwardIosRounded />}
+          onClick={()=>{window.location.href="/about"}}
         >
           View profile
         </Button>
