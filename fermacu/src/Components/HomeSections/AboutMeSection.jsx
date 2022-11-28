@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 //UI Material
-import { Box, Grid, Stack, Tab, Tabs } from "@mui/material";
+import { Box, Button, Grid, Stack, Tab, Tabs } from "@mui/material";
 
 //Helpers
 import {
@@ -12,6 +12,8 @@ import {
 //Components
 import EducationSection from "./EducationSection";
 import ExperienceSection from "./ExperienceSection";
+import { ArrowForwardIos, CoPresent, Place } from "@mui/icons-material";
+import StackWithIcon from "../Basics/StackWithIcon";
 
 export default function AboutMeCard() {
   // ==========> Component States <==========
@@ -45,17 +47,46 @@ export default function AboutMeCard() {
   }
   return (
     <Grid container spacing={2} justifyContent="flex-start">
-      <Grid item xs={12}>
-        <Stack justifyContent="flex-start">
-          {typographyForMainTitles("I am Fernando Matamoros", "white")}
-          {typographyForText(
-            "I'm Fernando, a professional web designer & front end developer focused on crafting clean & user friendly experiences.",
-            null,
-            "white"
-          )}
-        </Stack>
+      <Grid item xs={12} md={6}>
+        <Grid container spacing={2}>
+          <Grid item xs={12}>
+            <Stack justifyContent="flex-start">
+              {typographyForMainTitles("I am Fernando Matamoros", "white")}
+              {typographyForText(
+                "I'm Fernando, a professional web designer & front end developer focused on crafting clean & user friendly experiences.",
+                null,
+                "white"
+              )}
+            </Stack>
+          </Grid>
+          <Grid item xs={12}>
+            <StackWithIcon
+              icon={typographyForMainTitles("2+", "secondary")}
+              title="Years"
+              text="Experience"
+            />
+          </Grid>
+          <Grid item xs={12}>
+            <StackWithIcon
+              icon={typographyForMainTitles(<Place/>, "secondary")}
+              title="San José"
+              text="Costa Rica"
+            />
+          </Grid>
+          <Grid item xs={12} sx={{ marginBottom: "20px" }}>
+            <Button
+              size="small"
+              variant="outlined"
+              startIcon={<CoPresent color="secondary" />}
+              endIcon={<ArrowForwardIos />}
+            >
+              MORE ABOUT ME
+            </Button>
+          </Grid>
+        </Grid>
       </Grid>
-      <Grid item xs={12}>
+
+      <Grid item xs={12} md={6}>
         <Grid
           container
           sx={{
