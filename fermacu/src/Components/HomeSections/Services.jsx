@@ -1,4 +1,4 @@
-import { PhoneIphone, RocketLaunch, Web } from "@mui/icons-material";
+import { AutoFixHigh, MiscellaneousServices, RocketLaunch, Web } from "@mui/icons-material";
 import { Card, Grid } from "@mui/material";
 import React from "react";
 
@@ -18,7 +18,7 @@ export default function Services() {
             color: "white",
           }}
         >
-          <StackWithIcon title={"Custom Software"} icon={<PhoneIphone />} />
+          <StackWithIcon title={"Custom Software"} icon={<MiscellaneousServices />} />
         </Card>
       </Grid>
       <Grid item md={3} xs={6}>
@@ -44,7 +44,7 @@ export default function Services() {
             color: "white",
           }}
         >
-          <StackWithIcon title={"Unique Design"} icon={<RocketLaunch />} />
+          <StackWithIcon title={"Unique Design"} icon={<AutoFixHigh />} />
         </Card>
       </Grid>
       <Grid item md={3} xs={6}>
