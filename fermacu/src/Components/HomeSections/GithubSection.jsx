@@ -1,8 +1,7 @@
 import React from "react";
 
 //UI Material
-import { ArrowForwardIosRounded, GitHub } from "@mui/icons-material";
-import { Button, Grid, Stack } from "@mui/material";
+import { Grid, Stack } from "@mui/material";
 
 //Github Calendar
 import GitHubCalendar from "react-github-calendar";
@@ -34,19 +33,6 @@ export default function GithubSection() {
           username="fermacu"
           color="#FD4600"
         />
-      </Grid>
-      <Grid item xs={12} align="center">
-        <Button
-          size="small"
-          variant="outlined"
-          startIcon={<GitHub/>}
-          onClick={() => {
-            window.location.href = "https://github.com/Fermacu";
-          }}
-          endIcon={<ArrowForwardIosRounded />}
-        >
-          View profile
-        </Button>
       </Grid>
     </Grid>
   );

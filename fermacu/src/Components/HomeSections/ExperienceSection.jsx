@@ -1,18 +1,15 @@
 import React from "react";
 
 //UI Material
-import { Button, Grid } from "@mui/material";
+import { Grid } from "@mui/material";
 import {
-  ArrowForwardIosRounded,
   Bookmark,
-  Person,
   Phonelink,
   Web,
 } from "@mui/icons-material";
 
 //Helpers
 import {
-  typographyForMainTitles,
   typographyForText,
 } from "../../Helpers/typography";
 import StackWithIcon from "../Basics/StackWithIcon";
@@ -22,13 +19,6 @@ export default function ExperienceSection() {
     <Grid container spacing={2} sx={{ color: "white", marginTop: "10px" }}>
       <Grid item xs={12}>
         {typographyForText("> Experience", "bold")}
-      </Grid>
-      <Grid item xs={12}>
-        <StackWithIcon
-          icon={typographyForMainTitles("2+", "secondary")}
-          title="Years"
-          text="Experience"
-        />
       </Grid>
       <Grid item xs={12}>
         <StackWithIcon
@@ -54,16 +44,6 @@ export default function ExperienceSection() {
           text="Energías Limpias de Costa Rica, ELCO"
           text2="2021 - Present"
         />
-      </Grid>
-      <Grid item xs={12} align="center">
-        <Button
-          size="small"
-          variant="outlined"
-          startIcon={<Person />}
-          endIcon={<ArrowForwardIosRounded />}
-        >
-          View profile
-        </Button>
       </Grid>
     </Grid>
   );

@@ -1,14 +1,12 @@
 import React from "react";
 
 //UI Material
-import { Button, Grid } from "@mui/material";
+import { Grid } from "@mui/material";
 import {
   AppShortcut,
-  ArrowForwardIosRounded,
   Business,
   Code,
   Phonelink,
-  School,
 } from "@mui/icons-material";
 
 //Helpers
@@ -55,16 +53,6 @@ export default function EducationSection() {
           title="JavaScript Essentials"
           text="Udemy"
         />
-      </Grid>
-      <Grid item xs={12} align="center">
-        <Button
-          size="small"
-          variant="outlined"
-          startIcon={<School />}
-          endIcon={<ArrowForwardIosRounded />}
-        >
-          View more
-        </Button>
       </Grid>
     </Grid>
   );

@@ -1,13 +1,27 @@
-import { Box } from '@mui/material'
-import React from 'react'
+import React from "react";
 
+//UI Material
+import { Grid } from "@mui/material";
 
-import fermacuwhite from "../../Assets/fermacu.png" 
+//Assets
+import fermacuwhite from "../../Assets/fermacu.png";
 
-export default function LogoWhite({height="50px"}) {
+//Helpers
+import { typographyForText } from "../../Helpers/typography";
+
+export default function LogoWhite({ height = "50px" }) {
   return (
-    <Box sx={{marginTop: "20px", marginBottom: "20px"}}>
-        <img height={height} src={fermacuwhite} alt='logo-frmcu'/>
-    </Box>
-  )
+    <Grid container sx={{ marginTop: "20px", marginBottom: "20px" }}>
+      <Grid item xs={12}>
+        <img height={height} src={fermacuwhite} alt="logo-frmcu" />
+      </Grid>
+      <Grid item xs={12} align="center">
+        {typographyForText(
+          "Where coffee becomes code",
+          "bold",
+          "white"
+        )}
+      </Grid>
+    </Grid>
+  );
 }
