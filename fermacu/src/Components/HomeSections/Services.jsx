@@ -20,7 +20,7 @@ import StackWithIcon from "../Basics/StackWithIcon";
 export default function Services() {
   return (
     <Grid container spacing={1}>
-      <Grid item xs={12} sx={{ marginTop: "20px" }}>
+      <Grid item xs={12}>
         {typographyForMainTitles(
           "Creativity is intelligence having fun.",
           "white"
@@ -89,7 +89,7 @@ export default function Services() {
       </Grid>
       <Grid item xs={12} sx={{ marginBottom: "20px" }}>
         <Button
-          size="small "
+          size="small"
           variant="outlined"
           startIcon={<Email color="secondary" />}
           endIcon={<ArrowForwardIos />}
