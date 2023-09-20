@@ -1,13 +1,15 @@
-import { Box } from '@mui/material'
-import React from 'react'
+import React from "react";
 
+//UI Material
+import { Box } from "@mui/material";
 
-import fermacuwhite from "../../Assets/fermacuwhite.png" 
+//Assets
+import fermacuwhite from "../../Assets/fermaculogo.png";
 
-export default function LogoBlue({height="50px"}) {
+export default function LogoBlue({ height = "50px" }) {
   return (
-    <Box sx={{marginTop: "20px", marginBottom: "20px"}}>
-        <img height={height} src={fermacuwhite} alt='logo-frmcu'/>
+    <Box >
+        <img height={height} src={fermacuwhite} alt="logo-frmcu" />
     </Box>
-  )
+  );
 }

@@ -2,19 +2,21 @@ import React from "react";
 
 //UI Material
 import { Button, Grid, Stack } from "@mui/material";
+
+//Material Icons
 import { ArrowForwardIosOutlined, GitHub, Instagram, LinkedIn, RocketLaunch } from "@mui/icons-material";
 
 //Helpers
-import LogoWhite from "./Logos/LogoWhite";
+import LogoBlue from "./Logos/LogoBlue";
 
 
 export default function Appviewport({page}) {
   return (
-    <Grid container sx={{ padding: "15px", backgroundColor: "#000" }}>
-      <Grid item xs={12} align="center">
-        <LogoWhite />
+    <Grid container>
+      <Grid item xs={12} align="center" sx={{marginTop: "20px"}}>
+        <LogoBlue />
       </Grid>
-      <Grid item xs={12} sx={{marginBottom:"20px"}}>
+      <Grid item xs={12} sx={{marginTop:"10px"}}>
         <Stack direction="row" spacing={1} justifyContent="center">
           <Button
             size="small"
@@ -35,7 +37,7 @@ export default function Appviewport({page}) {
           </Button>
         </Stack>
       </Grid>
-      <Grid item xs={12}>
+      <Grid item xs={12} sx={{marginTop:"20px"}}>
         {page}
       </Grid>
     </Grid>

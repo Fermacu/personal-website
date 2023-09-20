@@ -65,22 +65,3 @@ export const typographyForCustomizedFontSize = (
     </Typography>
   );
 };
-
-/**
- * Generate custom colored text with UI material typography
- * @param {String} text The text
- * @param {String} color The text color
- * @param {String} bold  The fontWeight of the text
- * @returns custom colored text with UI material typography
- */
-export const typographyForCustomizedColor = (
-  text = "",
-  color = "",
-  bold = null
-) => {
-  return (
-    <Typography component={"span"} sx={{ color: color }} fontWeight={bold}>
-      {text}
-    </Typography>
-  );
-};
